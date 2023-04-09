@@ -94,11 +94,11 @@ class Cat extends Pet {
 
 //Subclass for birds
 class Bird extends Pet {
-	private String type;
+	private boolean flies;
 
-	public Bird(String name, int age, String breed, String type) {
+	public Bird(String name, int age, String breed, boolean flies) {
 		super(name, age, breed);
-		this.type = type;
+		this.flies = flies;
 	}
 
 public String getColor() {
@@ -109,12 +109,12 @@ public String getColor() {
 		this.color = color;
 	}
 
-	public String getType() {
-		return type;
+	public boolean getFlies() {
+		return flies;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setType(boolean flies) {
+		this.flies = flies;
 	}
 }
 
