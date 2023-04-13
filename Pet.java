@@ -57,6 +57,7 @@ class Dog extends Pet {
 	public Dog(String name, int age, String breed, String size, String fav, String gender) {
 		super(name, age, breed, gender);
  		this.size = size;
+		this.Fav = fav
 	}
 
 	public String getColor() {
@@ -114,7 +115,7 @@ class Bird extends Pet {
 	private String Fav;
 	public Bird(String name, int age, String breed, String fav, String gender) {
 		super(name, age, breed, gender);
-		this.flies = flies;
+		this.Fav = fav;
 	}
 
 public String getColor() {
@@ -139,7 +140,7 @@ class Hamster extends Pet {
 
 	public Hamster(String name, int age, String breed, String fav, String gender) {
 		super(name, age, breed, gender);
-		this.favoriteFood = favoriteFood;
+		this.Fav = fav;
 	}
 	
 	public String getColor() {
@@ -174,6 +175,7 @@ class Lizard extends Pet {
 	public Lizard(String name, int age, String breed, String isVenomous, String fav, String gender) {
 		super(name, age, breed, gender);
 		this.isVenomous = isVenomous;
+		this.Fav = fav;
 	}
 
 	public String getColor() {
