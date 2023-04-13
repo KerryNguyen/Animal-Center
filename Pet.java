@@ -52,8 +52,9 @@ private String gender;
 //Subclass for dogs
 class Dog extends Pet {
 	private String size;
+	private String Fav;
 
-	public Dog(String name, int age, String breed, String size, String gender) {
+	public Dog(String name, int age, String breed, String size, String fav, String gender) {
 		super(name, age, breed, gender);
  		this.size = size;
 	}
@@ -72,6 +73,13 @@ class Dog extends Pet {
 
 	public void setSize(String size) {
 		this.size = size;
+	}
+	public String getFav() {
+		return Fav;
+	}
+
+	public void setFav(String fav) {
+		this.Fav = fav;
 	}
 }
 
@@ -103,7 +111,8 @@ class Cat extends Pet {
 
 //Subclass for birds
 class Bird extends Pet {
-	public Bird(String name, int age, String breed, String gender) {
+	private String Fav;
+	public Bird(String name, int age, String breed, String fav, String gender) {
 		super(name, age, breed, gender);
 		this.flies = flies;
 	}
@@ -115,13 +124,20 @@ public String getColor() {
 	public void setColor(String color) {
 		this.color = color;
 	}
+	public String getFav() {
+		return Fav;
+	}
+
+	public void setFav(String fav) {
+		this.Fav = fav;
+	}
 }
 
 //Subclass for hamsters
 class Hamster extends Pet {
-	private String favoriteFood;
+	private String Fav;
 
-	public Hamster(String name, int age, String breed, String gender) {
+	public Hamster(String name, int age, String breed, String fav, String gender) {
 		super(name, age, breed, gender);
 		this.favoriteFood = favoriteFood;
 	}
@@ -141,13 +157,21 @@ class Hamster extends Pet {
 	public void setFavoriteFood(String favoriteFood) {
 	this.favoriteFood = favoriteFood;
 	}
+	public String getFav() {
+		return Fav;
+	}
+
+	public void setFav(String fav) {
+		this.Fav = fav;
+	}
 }
 
 //Subclass for lizards
 class Lizard extends Pet {
 	private String isVenomous;
+	private String Fav;
 
-	public Lizard(String name, int age, String breed, String isVenomous, String gender) {
+	public Lizard(String name, int age, String breed, String isVenomous, String fav, String gender) {
 		super(name, age, breed, gender);
 		this.isVenomous = isVenomous;
 	}
@@ -166,5 +190,12 @@ class Lizard extends Pet {
 
 	public void setIsVenomous(String isVenomous) {
 		this.isVenomous = isVenomous;
+	}
+	public String getFav() {
+		return Fav;
+	}
+
+	public void setFav(String fav) {
+		this.Fav = fav;
 	}
 }
