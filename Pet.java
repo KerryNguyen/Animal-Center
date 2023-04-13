@@ -4,11 +4,13 @@ private String name;
 private int age;
 private String breed;
 public String color;
+private String gender;
 
-	public Pet(String name, int age, String breed) {
+	public Pet(String name, int age, String breed, String gender) {
 		this.name = name;
 		this.age = age;
 		this.breed = breed;
+		this.gender = gender
 	}
 
 // Abstract method to get the color of the pet
@@ -38,14 +40,21 @@ public String color;
 	public void setBreed(String breed) {
 		this.breed = breed;
 	}
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 }
 
 //Subclass for dogs
 class Dog extends Pet {
 	private String size;
 
-	public Dog(String name, int age, String breed, String size) {
-		super(name, age, breed);
+	public Dog(String name, int age, String breed, String size, String gender) {
+		super(name, age, breed, gender);
  		this.size = size;
 	}
 
@@ -70,8 +79,8 @@ class Dog extends Pet {
 class Cat extends Pet {
 	private String Fav;
 
-	public Cat(String name, int age, String breed, String fav) {
-		super(name, age, breed);
+	public Cat(String name, int age, String breed, String fav, String gender) {
+		super(name, age, breed, gender);
  		this.Fav = fav;
 	}
 
@@ -94,10 +103,8 @@ class Cat extends Pet {
 
 //Subclass for birds
 class Bird extends Pet {
-	private boolean flies;
-
-	public Bird(String name, int age, String breed, boolean flies) {
-		super(name, age, breed);
+	public Bird(String name, int age, String breed, String gender) {
+		super(name, age, breed, gender);
 		this.flies = flies;
 	}
 
@@ -108,22 +115,14 @@ public String getColor() {
 	public void setColor(String color) {
 		this.color = color;
 	}
-
-	public boolean getFlies() {
-		return flies;
-	}
-
-	public void setType(boolean flies) {
-		this.flies = flies;
-	}
 }
 
 //Subclass for hamsters
 class Hamster extends Pet {
 	private String favoriteFood;
 
-	public Hamster(String name, int age, String breed, String favoriteFood) {
-		super(name, age, breed);
+	public Hamster(String name, int age, String breed, String gender) {
+		super(name, age, breed, gender);
 		this.favoriteFood = favoriteFood;
 	}
 	
@@ -146,10 +145,10 @@ class Hamster extends Pet {
 
 //Subclass for lizards
 class Lizard extends Pet {
-	private boolean isVenomous;
+	private String isVenomous;
 
-	public Lizard(String name, int age, String breed, boolean isVenomous) {
-		super(name, age, breed);
+	public Lizard(String name, int age, String breed, String isVenomous, String gender) {
+		super(name, age, breed, gender);
 		this.isVenomous = isVenomous;
 	}
 
@@ -161,11 +160,11 @@ class Lizard extends Pet {
 		this.color = color;
 	}
 
-	public boolean getIsVenomous() {
+	public String getIsVenomous() {
 		return isVenomous;
 	}
 
-	public void setIsVenomous(boolean isVenomous) {
+	public void setIsVenomous(String isVenomous) {
 		this.isVenomous = isVenomous;
 	}
 }
