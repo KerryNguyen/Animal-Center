@@ -68,11 +68,11 @@ class Dog extends Pet {
 
 //Subclass for cats
 class Cat extends Pet {
-	private boolean isIndoor;
+	private String Fav;
 
-	public Cat(String name, int age, String breed, boolean isIndoor) {
+	public Cat(String name, int age, String breed, String fav) {
 		super(name, age, breed);
- 		this.isIndoor = isIndoor;
+ 		this.Fav = fav;
 	}
 
 	public String getColor() {
@@ -83,12 +83,12 @@ class Cat extends Pet {
 		this.color = color;
 	}
 
-	public boolean getIsIndoor() {
-		return isIndoor;
+	public String getFav() {
+		return Fav;
 	}
 
-	public void setIsIndoor(boolean isIndoor) {
-		this.isIndoor = isIndoor;
+	public void setFav(String fav) {
+		this.Fav = fav;
 	}
 }
 
