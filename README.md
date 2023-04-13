@@ -1,4 +1,2 @@
-<p align="center">
-  <h1>A Animal Center GUI</h1>
-  <h2>A COMP-SCI 1050 Project</h2>
-</p>
+<h1 align="center">A Animal Center GUI</h1>
+<h2 align="center">A COMP-SCI 1050 Project</h2>
