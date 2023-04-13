@@ -10,7 +10,7 @@ private String gender;
 		this.name = name;
 		this.age = age;
 		this.breed = breed;
-		this.gender = gender
+		this.gender = gender;
 	}
 
 // Abstract method to get the color of the pet
